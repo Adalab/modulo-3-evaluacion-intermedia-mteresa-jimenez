@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Pokemons.scss";
 
 class Pokemons extends Component {
   constructor() {
@@ -6,10 +7,15 @@ class Pokemons extends Component {
   }
 
   render() {
+    const pokeinfo = this.props.pokemon.types.map((type) => {
+      return <li className="types">{type}</li>;
+    });
+
     return (
-      <div>
-        <h2>{this.props.pokemon.name}</h2>
+      <div className="pokemon">
         <img src={this.props.pokemon.url} alt="Imagen Pokemon" />
+        <h2 className="name">{this.props.pokemon.name}</h2>
+        <ul>{pokeinfo}</ul>
       </div>
     );
   }

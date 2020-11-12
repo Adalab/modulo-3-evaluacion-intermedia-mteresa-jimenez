@@ -1,0 +1,22 @@
+.pokemon {
+  border: #808080 solid 1px;
+  border-radius: 12px;
+  width: 150px;
+  margin: 20px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.name {
+  border-top: #808080 solid 1px;
+  border-bottom: #808080 solid 1px;
+  width: 148px;
+  text-align: center;
+}
+
+.types {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 12px;
+  margin: 5px;
+}

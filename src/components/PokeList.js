@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Pokemons from "./Pokemons";
+import "./PokeList.scss";
 
 class PokeList extends Component {
   constructor() {
@@ -7,18 +8,6 @@ class PokeList extends Component {
   }
 
   render() {
-    // console.log(this.props.pokemons);
-
-    // let pokelist = [];
-
-    // for (pokemon of pokemons) {
-    //   pokelist.push(
-    //     <li key={pokemon.id}>
-    //       <Pokemons pokemon={pokemon} />
-    //     </li>
-    //   );
-    // }
-
     const pokelist = this.props.pokemons.map((pokemon) => {
       return (
         <li key={pokemon.id}>
@@ -29,7 +18,7 @@ class PokeList extends Component {
     return (
       <div>
         <h1>Mi lista de pokemon</h1>
-        <ul>{pokelist}</ul>
+        <ul className="box">{pokelist}</ul>
       </div>
     );
   }
