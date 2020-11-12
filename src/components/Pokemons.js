@@ -6,7 +6,12 @@ class Pokemons extends Component {
   }
 
   render() {
-    return <div>Hola mundo</div>;
+    return (
+      <div>
+        <h2>{this.props.pokemon.name}</h2>
+        <img src={this.props.pokemon.url} alt="Imagen Pokemon" />
+      </div>
+    );
   }
 }
 

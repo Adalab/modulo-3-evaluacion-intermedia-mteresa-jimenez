@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import pokemons from "../data/pokemons.json";
 import PokeList from "./PokeList";
+import pokemons from "../data/pokemons.json";
 import "./App.css";
 
 class App extends Component {
@@ -10,9 +10,10 @@ class App extends Component {
 
   render() {
     console.log(pokemons);
+
     return (
       <div>
-        <PokeList />
+        <PokeList pokemons={pokemons} />
       </div>
     );
   }
