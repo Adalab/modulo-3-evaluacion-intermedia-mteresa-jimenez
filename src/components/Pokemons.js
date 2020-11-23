@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import "./Pokemons.scss";
 
 class Pokemons extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
-    const pokeinfo = this.props.pokemon.types.map((type) => {
-      return <li className="types">{type}</li>;
+    const pokeinfo = this.props.pokemon.types.map((type, index) => {
+      return (
+        <li key={index} className="types">
+          {type}
+        </li>
+      );
     });
 
     return (

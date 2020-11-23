@@ -3,10 +3,6 @@ import Pokemons from "./Pokemons";
 import "./PokeList.scss";
 
 class PokeList extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const pokelist = this.props.pokemons.map((pokemon) => {
       return (
